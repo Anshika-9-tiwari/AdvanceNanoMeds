@@ -7,7 +7,7 @@ export default function DrIqbalSection() {
       <div className="nm-container grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
         <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-white/10">
           <Image
-            src="/about/about-boss.JPG"
+            src="/about/about-boss.jpg"
             alt="Advance Nanomeds leadership in the company office"
             fill
             sizes="(max-width: 1024px) 100vw, 45vw"

@@ -16,7 +16,7 @@ export default function AboutStorySection() {
         <div className="relative min-h-[520px]">
           <div className="absolute left-0 top-0 h-[78%] w-[78%] overflow-hidden rounded-[2rem] border border-base-300 shadow-xl">
             <Image
-              src="/about/about-owner.JPG"
+              src="/about/about-owner.jpg"
               alt="Advance Nanomeds leadership working in the office"
               fill
               sizes="(max-width: 1024px) 80vw, 38vw"
@@ -25,7 +25,7 @@ export default function AboutStorySection() {
           </div>
           <div className="absolute bottom-0 right-0 h-[48%] w-[58%] overflow-hidden rounded-[1.75rem] border-8 border-base-100 bg-base-200 shadow-xl">
             <Image
-              src="/about/about-1.jpg"
+              src="/about/about-vitc-drink.jpg"
               alt="Liposomal Vitamin C product use demonstration"
               fill
               sizes="(max-width: 1024px) 58vw, 29vw"

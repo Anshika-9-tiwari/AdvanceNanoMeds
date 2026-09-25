@@ -47,7 +47,7 @@ export default function AboutHeroSection() {
           <div className="absolute -left-8 top-8 size-40 rounded-full bg-primary/15 blur-3xl" />
           <div className="relative aspect-[5/4] overflow-hidden rounded-[2rem] border border-base-300 bg-base-200 shadow-2xl shadow-primary/10">
             <Image
-              src="/about/liposomal-vitamin-c.JPG"
+              src="/about/about-hero.jpg"
               alt="Liposomal Vitamin C being mixed into water"
               fill
               priority

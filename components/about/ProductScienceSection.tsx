@@ -36,7 +36,7 @@ export default function ProductScienceSection() {
 
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-base-300 bg-base-200 shadow-2xl shadow-primary/10">
             <Image
-              src="/images/liposomal-vitamin-group1.JPG"
+              src="/about/liposomal-group.jpg"
               alt="Advance Nanomeds Liposomal Vitamin C sachet being poured into water"
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"
