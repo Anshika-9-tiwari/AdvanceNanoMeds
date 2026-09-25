@@ -20,7 +20,7 @@ export const demoProducts: DemoProduct[] = [
     dosageForm: "Tablet",
     category: "General Care",
     shortDescription: "Vitamin C formulated with liposomal delivery technology and presented in single-serve sachets.",
-    image: "/images/liposomal-vitaminC.jpg",
+    image: "/images/liposomal-vitamin-c.jpg",
     priceLabel: "Contact for price",
   },
   {
@@ -42,7 +42,7 @@ export const demoProducts: DemoProduct[] = [
     dosageForm: "Syrup",
     category: "Everyday Health",
     shortDescription: "Glutathione formulated with liposomal delivery technology and supplied in sachets.",
-    image: "/about/liposomal-vitamin-c.jpg",
+    image: "/about/liposomal-vit-c.jpg",
     priceLabel: "Contact for price",
   },
   {
