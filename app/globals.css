@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: false;
+}
+@plugin "daisyui/theme" {
+  name: "nanomeds";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: oklch(99% 0.005 210);
+  --color-base-200: oklch(96% 0.012 210);
+  --color-base-300: oklch(92% 0.02 210);
+  --color-base-content: oklch(24% 0.035 240);
+  --color-primary: oklch(55% 0.12 190);
+  --color-primary-content: oklch(99% 0.01 190);
+  --color-secondary: oklch(48% 0.10 235);
+  --color-secondary-content: oklch(99% 0.01 235);
+  --color-accent: oklch(78% 0.13 165);
+  --color-accent-content: oklch(22% 0.03 165);
+  --color-neutral: oklch(28% 0.03 230);
+  --color-neutral-content: oklch(98% 0.01 230);
+  --color-info: oklch(72% 0.12 225);
+  --color-success: oklch(70% 0.13 155);
+  --color-warning: oklch(80% 0.15 80);
+  --color-error: oklch(64% 0.18 25);
+
+  --radius-selector: 1rem;
+  --radius-field: 0.9rem;
+  --radius-box: 1.4rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+:root {
+  --nm-navy: #10243e;
+  --nm-teal: #0b8f8a;
+  --nm-mint: #eaf8f5;
+  --nm-cyan: #eaf7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(11, 143, 138, 0.08), transparent 30%),
+    #fbfefd;
+  color: var(--nm-navy);
+}
+
+::selection {
+  background: rgba(11, 143, 138, 0.18);
+}
+
+.nm-container {
+  width: min(1200px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.nm-section {
+  padding-block: clamp(3rem, 5vw, 4.5rem);
+}
+
+.nm-grid-bg {
+  background-image:
+    linear-gradient(rgba(16, 36, 62, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 36, 62, 0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.nm-glow {
+  box-shadow: 0 30px 80px rgba(11, 143, 138, 0.14);
+}

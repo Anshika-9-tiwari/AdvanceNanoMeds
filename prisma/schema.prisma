@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  description String?
+  products    Product[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Product {
+  id                   String         @id @default(cuid())
+  name                 String
+  slug                 String         @unique
+  genericName          String?
+  brandName            String?
+  composition          String?
+  strength             String?
+  dosageForm           String?
+  packSize             String?
+  shortDescription     String?
+  description          String?
+  uses                 String[]       @default([])
+  benefits             String[]       @default([])
+  drawbacks            String[]       @default([])
+  sideEffects          String[]       @default([])
+  warnings             String[]       @default([])
+  precautions          String[]       @default([])
+  storage              String?
+  manufacturer         String?
+  currency             String         @default("INR")
+  price                Decimal?       @db.Decimal(10, 2)
+  prescriptionRequired Boolean        @default(false)
+  featured             Boolean        @default(false)
+  published            Boolean        @default(true)
+  categoryId           String?
+  category             Category?      @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  images               ProductImage[]
+  videos               ProductVideo[]
+  createdAt            DateTime       @default(now())
+  updatedAt            DateTime       @updatedAt
+
+  @@index([categoryId])
+  @@index([featured, published])
+}
+
+model ProductImage {
+  id        String   @id @default(cuid())
+  url       String
+  alt       String
+  sortOrder Int      @default(0)
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@index([productId])
+}
+
+model ProductVideo {
+  id        String   @id @default(cuid())
+  title     String
+  url       String
+  posterUrl String?
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@index([productId])
+}
+
+model ContactSubmission {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String?
+  message   String
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}

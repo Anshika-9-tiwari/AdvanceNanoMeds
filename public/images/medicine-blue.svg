@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="t d">
+<title id="t">NanoMeds medicine illustration</title><desc id="d">Abstract capsules and tablets on a blue pharmaceutical background.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#c9f2f4"/><stop offset="1" stop-color="#69c6dc"/></linearGradient>
+  <filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#10243e" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#bg)"/>
+<circle cx="170" cy="130" r="120" fill="#fff" opacity=".18"/><circle cx="1050" cy="760" r="180" fill="#fff" opacity=".16"/>
+<g filter="url(#s)">
+  <g transform="translate(650 420) rotate(-24)"><rect x="-170" y="-70" width="340" height="140" rx="70" fill="#fff"/><path d="M0-70h100a70 70 0 010 140H0z" fill="#0b8f8a"/></g>
+  <g transform="translate(880 250) rotate(32)"><rect x="-120" y="-52" width="240" height="104" rx="52" fill="#fff"/><path d="M0-52h68a52 52 0 010 104H0z" fill="#ff9f6e"/></g>
+  <g transform="translate(470 650) rotate(18)"><rect x="-105" y="-46" width="210" height="92" rx="46" fill="#f8f0b7"/><path d="M0-46h59a46 46 0 010 92H0z" fill="#f36b6b"/></g>
+  <circle cx="770" cy="640" r="62" fill="#fff"/><path d="M708 640h124" stroke="#cbd5e1" stroke-width="8"/>
+  <circle cx="990" cy="515" r="46" fill="#f8f0b7"/><circle cx="355" cy="330" r="42" fill="#fff"/>
+</g>
+<g fill="#10243e" opacity=".14"><circle cx="110" cy="690" r="12"/><circle cx="160" cy="720" r="8"/><circle cx="1050" cy="140" r="10"/></g>
+</svg>
